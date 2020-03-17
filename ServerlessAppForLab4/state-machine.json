@@ -1,0 +1,32 @@
+﻿{
+  "Comment": "State Machine",
+  "StartAt": "Lab4Yeseul",
+  "States": {
+    "Lab4Yeseul": {
+      "Type": "Parallel",
+      "End": true,
+      "Branches": [
+        {
+          "StartAt": "FaceDetection",
+          "States": {
+            "FaceDetection": {
+              "Type": "Task",
+              "Resource": "${FaceDetectionTask.Arn}",
+              "End": true
+            }
+          }
+        },
+        {
+          "StartAt": "Thumbnail",
+          "States": {
+            "Thumbnail": {
+              "Type": "Task",
+              "Resource": "${ThumbnailTask.Arn}",
+              "End": true
+            }
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>ServerlessAppForLab4</id>
+    <version>1.0.0</version>
+    <authors>ServerlessAppForLab4</authors>
+    <owners>ServerlessAppForLab4</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework=".NETCoreApp2.1">
+        <dependency id="AWSSDK.Rekognition" version="3.3.103.1" exclude="Build,Analyzers" />
+        <dependency id="AWSSDK.S3" version="3.3.109.1" exclude="Build,Analyzers" />
+        <dependency id="Amazon.Lambda.Core" version="1.1.0" exclude="Build,Analyzers" />
+        <dependency id="Amazon.Lambda.S3Events" version="1.1.0" exclude="Build,Analyzers" />
+        <dependency id="Amazon.Lambda.Serialization.Json" version="1.5.0" exclude="Build,Analyzers" />
+        <dependency id="GrapeCity.Documents.Imaging" version="3.0.0.418" exclude="Build,Analyzers" />
+        <dependency id="TinyPNG" version="3.2.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\Yeseul Jang\source\repos\ServerlessAppForLab4\ServerlessAppForLab4\bin\Debug\netcoreapp2.1\ServerlessAppForLab4.runtimeconfig.json" target="lib\netcoreapp2.1\ServerlessAppForLab4.runtimeconfig.json" />
+    <file src="C:\Users\Yeseul Jang\source\repos\ServerlessAppForLab4\ServerlessAppForLab4\bin\Debug\netcoreapp2.1\ServerlessAppForLab4.dll" target="lib\netcoreapp2.1\ServerlessAppForLab4.dll" />
+  </files>
+</package>
